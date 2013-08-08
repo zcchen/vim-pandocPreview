@@ -7,8 +7,8 @@ if exists('g:pandocPreview_browser')
     let s:browser = g:pandocPreview_browser
 else
     if has('unix')
-        let s:browser = 'arora'
-        "let s:browser = 'xdg-open'
+        "let s:browser = 'arora'
+        let s:browser = 'xdg-open'
     elseif has('win32') || has('win64')
         " code
     endif
